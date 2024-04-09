@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="firstName" placeholder="Company Name"><br>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="lastName" placeholder="Contact Name"><br>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="contacttitle" placeholder="Contact Title"><br>
+            </div>
+            <div>
+                <button class="add-remove-btn" onclick="addRow()">Add</button>
+            </div>
+        </div>
+        <div id="tableContainer"></div>
+    </div>
+    <table id="myTable">
+        <tr>
+            <th>Company Name</th>
+            <th>Contact Name</th>
+            <th>Contact Title</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <input type="text" id="searchInput" oninput="search(this.value)" placeholder="Search...">
+        <select id="sortBySelect" onchange="sortByDate(this.value)">
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+        </select>
+        
+
+        <tr>
+            <td>Hemid</td>
+            <td>Ismayilzade</td>
+            <td>SAFDASD</td>
+            <td><button class="add-remove-btn" onclick="removeRow(this)">Delete</button></td>
+            <td><button class="add-remove-btn" onclick="updateRow(this)">Update</button></td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>

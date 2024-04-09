@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .add-remove-btn {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .row {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .cell {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #myTable {
+    max-height: 500px;
+    overflow-y: scroll;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+  .add-remove-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  #container {
+   
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-size: 13px;
+    border: 2px solid #000;
+    padding: 10px;
+  }
+  #form input[type="text"] {
+    border: 1px solid #ccc;
+    width: 600px;
+    padding: 8px;
+    margin-bottom: 10px; 
+  }
+  .add-remove-btn {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+  }
+  
